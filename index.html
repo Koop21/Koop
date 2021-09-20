@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KOOP - Sistema de Ventas</title>
+        <link rel="shortcut icon" href="\images\logo.ico">
+        <!--Javascript Script-->
+        <script src="\js\modernizr-2.8.3-respond-1.4.2.min"></script>
+        <script src="\js\jquery-1.11.2.min"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery//1.7.2/jquery.min.js"></script>
+        <link href="\CSS\styles.css" rel="stylesheet">
+
+    </head>
+   
+    <body>
+        <!--<header class="container">
+            <img src="\images\logo.jpg" alt="Logo">
+        </header>-->
+
+        <nav id="menu">
+            <ul class="clearfix logo">
+                <li><a href="#">Ventas</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Vendedores</a></li>
+                <li><a href="#">Usuarios</a></li>
+                <li class="item-r"><a href="#">Log in</a></li>
+            </ul>
+            <a href="#" id="pull">Menú</a>
+        </nav>
+   
+
+       </div>
+       <div class="description">
+            <h1>KOOP</h1>
+            <H3>Sistema de Ventas</H3>
+            <p>Descripcion del Sistema</p>
+        </div>
+
+       <footer>
+           &copy;
+           2021 VAJEF Team
+       </footer>
+
+       <script>
+        $(function(){
+            var pull=$('#pull');
+            menu=$('nav ul');
+            menuHeight=menu.height();
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();});
+
+            $(window).resize(function(){
+                var w=$(window).width();
+                if(w>320&&menu.is(':hidden')){
+                    menu.removeAttr('style)');
+                }
+            })
+        });
+    </script>
+                    
+       
+        
+    </body>
+    
+    
+</html>
