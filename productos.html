@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KOOP - Sistema de Ventas</title>
+        <link rel="shortcut icon" href="\images\logo.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Javascript Script-->
+        <!--<script src="\js\modernizr-2.8.3-respond-1.4.2.min"></script>
+        <script src="\js\jquery-1.11.2.min"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery//1.7.2/jquery.min.js"></script>-->
+        <link href="\CSS\productsstyles.css" rel="stylesheet">
+
+    </head>
+   
+    <body>
+        <!--<header class="container">
+            <img src="\images\logo.jpg" alt="Logo">
+        </header>-->
+
+        <nav id="menu">
+            <ul class="clearfix logo">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Ventas</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Usuarios</a></li>
+                <li class="item-r"><a href="#">Log Out</a></li>
+            </ul>
+        </nav>
+   
+
+       </div>
+              
+        <div class="container">
+            <div class="form_top">
+                <h2>Registro de Productos</h2>
+            </div>
+            <hr />
+            <form class="form_reg">
+                <label for="code">Código del Producto</label>
+                <input class="input" type="number" id="code" placeholder="&#127380 Codigo de Producto" required autofocus min="1" max="1000000">
+                <label for="descripcion">Descripción del Producto</label>
+                <textarea name="descripcion" id="descripcion"  placeholder="&#128221 Descripción" required autofocus minlength="5" maxlength="100" size="102"></textarea>
+                <label for="value">Valor Unitario del Producto</label>
+                <input class="input" type="number" id="value" placeholder="&#128176 Vr Unitario" required autofocus min="1000" max="1000000">
+                <label for="estado">Estado del Producto</label>
+                <select name="Estado" id="estado" required autofocus>
+                    <option value="" disabled selected>&#128480Estado del Producto</option>
+                    <option value="Disponible">Disponible</option>
+                    <option value="No Disponible">No Disponible</option>
+                </select>
+                <div class=btn_form>
+                    <input class="btn_submit" type="submit" value="Registrar">
+                    <input class="btn_reset" type="reset" value="Cancelar">
+                </div>
+
+            </form>
+
+            <hr />
+        </div>
+
+       <footer>
+           &copy;
+           2021 VAJEF Team
+       </footer>
+
+       <script>
+        $(function(){
+            var pull=$('#pull');
+            menu=$('nav ul');
+            menuHeight=menu.height();
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();});
+
+            $(window).resize(function(){
+                var w=$(window).width();
+                if(w>320&&menu.is(':hidden')){
+                    menu.removeAttr('style)');
+                }
+            })
+        });
+    </script>
+                    
+       
+        
+    </body>
+    
+    
+</html>
