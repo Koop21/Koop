@@ -1,0 +1,81 @@
+.container{
+    max-width: 450px;
+    height: auto;
+    background-color: #efefef;
+    margin: 4% auto;
+    padding-bottom: 0;
+}
+.form_top{
+    width: 100%;
+    text-align: center;
+    /*padding: 0.5rem 0.1rem;
+    border-top: solid #ff9287;
+    margin-bottom: 1rem;*/
+}
+
+.form_top h2{
+    font-weight: bold;
+    font-size: 18px;
+    color: #34434f;
+}
+
+.form_reg{
+    padding: 0 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn_form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+#descripcion{
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 50px;
+    max-height: 50px;   
+}
+
+#descripcion{
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 50px;
+    max-height: 50px;   
+}
+
+.input, .btn_submit, .btn_reset, #estado, #descripcion {
+   background-color: #efefef;
+   padding: .2rem;
+   margin: .3rem 0;
+   border:none;
+   border-bottom: solid #34434f 0.05rem;
+   transition: all .5s;
+}
+
+.input:focus, #estado:focus, #descripcion:focus{
+    background-color: #34434f;
+    color:white;
+}
+
+
+.btn_submit, .btn_reset {
+   width: 45%;
+   border-color:#455868;
+   background-color:#efefef;
+   color:#34434f;
+   border-radius: 25px;
+}
+
+.btn_submit:hover, .btn_reset:hover{
+   background-color:#455868;
+   color:white;
+}
+
+label {
+   font: size 13px;
+   color: #e84b37 /*#34434f*/;
+   
+}
