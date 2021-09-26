@@ -1,4 +1,5 @@
 
+import createProduct from './createProduct.js';
 import Formulario from './Formulario.js';
 
 const Registro=()=>{
@@ -6,6 +7,7 @@ const Registro=()=>{
       <div>
        
         <Formulario />
+        <createProduct />
     
       </div>
     );

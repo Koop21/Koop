@@ -1,6 +1,8 @@
 import react from "react";
 import './Formulario.css';
 
+
+
 function Formulario(props){
     return(
         <div class="container">
@@ -22,12 +24,13 @@ function Formulario(props){
                     <option value="No Disponible">No Disponible</option>
                 </select>
                 <div className="btn_form">
-                    <input class="btn_submit" type="submit" value="Registrar"></input>
+                    <input class="btn_submit" type="submit" id="btn_submit"value="Registrar"></input>
                     <input class="btn_reset" type="reset" value="Cancelar"></input>
                 </div>
             </div>
         </div>
 
+ 
     );
 }
 

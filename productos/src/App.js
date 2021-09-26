@@ -5,15 +5,18 @@ import Formulario from './Formulario.js';
 import Pie from './Pie.js';
 import Conceptos from './Rutas';
 import Rutas from './Rutas';
+import react from 'react';
 
-function App() {
-  return (
-    <div clasName="app">
-      <Menu />
-      <Rutas />
-      <Pie /> 
-    </div>
-  );
+class App extends react.Component {
+  render(){
+    return(
+      <div clasName="app">
+        <Menu />
+        <Rutas />
+        <Pie /> 
+      </div>
+    );
+  } 
 }
 
 export default App;
