@@ -1,0 +1,58 @@
+
+.containerconsulta{
+    background-color: #efefef;
+    color:#34434f;
+    padding: 5px;
+    margin: 0 auto;
+}
+.search{
+    border-bottom: 1px solid #e84b37;
+}
+.search label, input, .btnsearch{
+    display:inline-block;
+    margin:0 20px;
+}
+
+.search label{
+    font-size: 14px;
+    color:#34434f;
+}
+.search input{
+    width: 200px;
+}
+.search .btnsearch {
+    width: 250px;
+    border-color:#455868;
+    background-color:#efefef;
+    color:#34434f;
+    border-radius: 25px;
+    padding: .2rem;
+    margin: .3rem 0;
+    border:none;
+    border-bottom: solid #34434f 0.05rem;
+    transition: all .5s;
+ }
+ 
+ .btnsearch:hover{
+    background-color:#455868;
+    color:white;
+ }
+
+ 
+.form_reg{
+    max-width: 450px;
+    height: auto;
+    background-color: #efefef;
+    margin: 4% auto;
+    padding-bottom: 0;
+    padding: 0 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn_form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
