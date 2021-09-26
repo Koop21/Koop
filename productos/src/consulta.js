@@ -1,10 +1,10 @@
-
+import FormularioConsulta from './FormularioConsulta.js';
 
 const Consulta=()=>{
     return(
       <div>
       
-        <h1>CONSULTA</h1>
+        <FormularioConsulta />
   
       </div>
     );

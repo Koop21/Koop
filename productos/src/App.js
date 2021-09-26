@@ -3,13 +3,14 @@ import './App.css';
 import Menu from './Menu.js';
 import Formulario from './Formulario.js';
 import Pie from './Pie.js';
-import Conceptos from './Conceptos';
+import Conceptos from './Rutas';
+import Rutas from './Rutas';
 
 function App() {
   return (
     <div clasName="app">
       <Menu />
-      <Conceptos />
+      <Rutas />
       <Pie /> 
     </div>
   );
