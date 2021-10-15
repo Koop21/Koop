@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Productos from "./Productos";
 
 export default class Nav extends Component{
   render() {
